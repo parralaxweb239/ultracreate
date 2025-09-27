@@ -1,42 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="/ultracreate/"> 
-    
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I.See — Envision. Refine. Reveal.</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              dark: {
-                bg: '#0A0C0E',
-                text: '#EAECEF',
-                card: '#1A1D21',
-                border: '#2D3239',
-                primary: '#3B82F6',
-              },
-              light: {
-                bg: '#F9FAFB',
-                text: '#111827',
-                card: '#FFFFFF',
-                border: '#E5E7EB',
-                primary: '#2563EB',
-              }
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Lora', 'serif'],
-            },
-          }
-        }
-      }
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -46,7 +14,9 @@
     "react/": "https://aistudiocdn.com/react@^19.1.1/",
     "react": "https://aistudiocdn.com/react@^19.1.1",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.4",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "vite": "https://aistudiocdn.com/vite@^7.1.7"
   }
 }
 </script>
@@ -54,6 +24,7 @@
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+    <script type="module" src="/src/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>
